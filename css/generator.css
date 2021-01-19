@@ -1,0 +1,5 @@
+.checklist{
+    display: grid;
+    grid-template-columns: 0.25fr 2.75fr;    
+    z-index: 5;
+}

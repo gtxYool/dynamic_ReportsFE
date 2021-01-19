@@ -6,11 +6,10 @@ body {
   font-size: 16px;
   height: 100vh;
   width: 100vw;
-  background-color: #D6EAF8;
+  /*background-color: #3F8C8B;*/
+  background-color: whitesmoke;
 }
 
-.center-box {
-}
 h1,
 h2,
 h3,
@@ -22,3 +21,75 @@ h5 {
 .hide {
   display: none;
 }
+
+.center-box {
+  display: flex;
+  padding: 2%;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6d6a3;
+  width: 70%;
+  height: min-content;
+  border-radius: 15%;
+  box-sizing: border-box;
+}
+.card{
+  box-shadow: 5px 5px 15px black;
+  border: 1px dashed #353882;
+}
+
+select {
+  /*background-color: transparent;*/
+  border: none;
+  padding: 0.25em 0.5em;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  line-height: inherit;
+  outline: none;
+  border-radius: 5px;
+}
+.select:focus, .select:hover {
+  border: blue 1px solid;
+}
+
+.select::after {
+  content: "";
+  width: 0.8em;
+  height: 0.5em;
+  background-color: var(--select-arrow);
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 0.5rem 0.5rem;
+  width: 80%;
+}
+form * {
+ /* border: black solid 1px;*/
+}
+
+label {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 0px;
+  padding: 0px 0.5rem;
+  box-sizing: border-box;
+}
+/*https://www.w3schools.com/howto/howto_js_close_list_items.asp*/
+.ghost{
+    display: flex;
+    visibility: hidden;
+}
+
+.ghost:focus, .ghost:hover {
+    visibility: visible;
+    border: blue 1px solid;
+}
+

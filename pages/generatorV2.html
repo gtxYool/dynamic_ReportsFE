@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/normalize.css" rel="stylesheet" />
+    <link href="../css/template.css" rel="stylesheet" />
+    <link href="../css/generatorV2.css" rel="stylesheet" />
+    <title>Generate V2</title>
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+    <!-- Container for the image gallery -->
+    <div class="container">
+      <!-- Full-width images with number text -->
+      <div class="mySlides">
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <!-- Image text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail images -->
+      <div class="row"></div>
+    </div>
+    <div class="tabla">
+      <div class="headers">
+        <label draggable="true" ondragstart="drag(event)" data-key="test">test</label>
+        <label draggable="true" ondragstart="drag(event)" data-key="test1">test</label>
+        <label draggable="true" ondragstart="drag(event)" data-key="test2">test</label>
+        <label draggable="true" ondragstart="drag(event)" data-key="test3">test</label>
+        <label draggable="true" ondragstart="drag(event)" data-key="test4">test</label>
+      </div>
+      <script src="../src/util/ShamblesDragAndDrop.js" defer></script>
+      <table>
+        <tr id="tblHead">
+          <th ondrop="drop(event)" ondragover="allowDrop(event)">
+            <p id="id">First Name</p>
+          </th>
+          <th ondrop="drop(event)" ondragover="allowDrop(event)">
+            <p draggable="true" ondragstart="drag(event)" id="id2">Last Name</p>
+          </th>
+          <th ondrop="drop(event)" ondragover="allowDrop(event)">
+            <p draggable="true" ondragstart="drag(event)" id="id3">contry</p>
+          </th>
+        </tr>
+      </table>
+    </div>
+    <footer></footer>
+    <script type="module" src="../src/util/OrderDragAndDrop.js"></script>
+  </body>
+</html>
